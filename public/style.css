@@ -70,8 +70,6 @@ body{
     border-radius: 1rem;
     text-align: justify;
     overflow-wrap: break-word;
-
-    
 }
 .outgoing_msg{
     justify-content: flex-end ;
@@ -108,21 +106,24 @@ body{
     color:rgb(255, 255, 255);
 }
 #msg_send{
-    /* background-color: antiquewhite; */
-    
-    
+   
     margin-top: 400px;
     margin-left:15px;
     position: fixed;
     display: flex;
+    width:max-content;
+    /* background-color: antiquewhite; */
+    
     
     /* background-color: antiquewhite; */
 }
 #input{
+   flex-shrink:1; 
    font-size: 20px;
    padding: 5px;
    padding-left:15px;
    color:rgb(167, 165, 165);
+   flex-shrink: 1;
    /* justify-self: flex-end; */
    border: 0px;
    border-radius: 0.5rem;
@@ -131,8 +132,6 @@ body{
    height:2.5rem;
     width:37.5rem;
     border-color: azure;
-    display:flex;
-    flex-shrink: 2;
     margin-left:1.5rem
 }
 
@@ -143,6 +142,7 @@ body{
     height:3rem;
     width:3rem;
     background-image: url(/images/send.png);
+    flex-shrink: 0;
     /* background-attachment: fixed; */
     background-size: contain;
     background-position: center;
